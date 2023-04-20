@@ -1,0 +1,48 @@
+.site-list {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-open-js .site-list {
+  display: block;
+}
+
+.site-list__link {
+  display: block;
+  padding: 5px;
+  color: inherit;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 75%;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  transition: $transition;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    background-size: 100% 1px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--current {
+    color: $accent-color;
+    cursor: default;
+    background-image: none;
+  }
+}
+
+@media (min-width: $md) {
+  .site-list,
+  .menu-open-js .site-list {
+    display: flex;
+    justify-content: space-between;
+  }
+}

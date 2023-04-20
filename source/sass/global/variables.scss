@@ -1,0 +1,30 @@
+// Main Colors
+$primary-color: #272733;
+$header-color: rgba(16, 16, 29, 0.9);
+$footer-color: #3d4050;
+
+// Secondary Colors
+$secondary-color: #ffffff;
+
+// Accent Colors
+$accent-color: #3e9cdc;
+
+// Text
+$main-font-size: 13px;
+$main-line-height: 16px;
+$main-font-family: "Lato", "Arial", sans-serif;
+$main-font-color: $secondary-color;
+$main-font-weight: 400;
+
+// Sizes
+$page-min-width: 320px;
+
+// Common
+$transition: all 0.3s ease-in;
+
+// Media Queries
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;

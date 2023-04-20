@@ -1,0 +1,56 @@
+.burger-button {
+  position: relative;
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border: none;
+}
+
+.burger-button::before,
+.burger-button::after {
+  transition: $transition;
+}
+
+.burger-button::before {
+  position: absolute;
+  content: "";
+  top: 8px;
+  left: 0;
+  width: 32px;
+  height: 2px;
+  background-color: #fff;
+  box-shadow: 0 8px 0 0 #fff, 0 16px 0 0 #fff;
+}
+
+@media (min-width: $md) {
+  .burger-button {
+    display: none;
+  }
+}
+
+.no-js .burger-button {
+  display: none;
+}
+
+.menu-open-js .burger-button {
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    left: 0;
+    width: 32px;
+    height: 2px;
+    background-color: #fff;
+  }
+
+  &::before {
+    box-shadow: none;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
