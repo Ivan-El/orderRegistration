@@ -1,10 +1,11 @@
 // Main Colors
-$primary-color: #272733;
-$header-color: rgba(16, 16, 29, 0.9);
-$footer-color: #3d4050;
+$primary-bg-color: #272733;
+$header-bg-color: rgba(16, 16, 29, 0.9);
+$footer-bg-color: #3d4050;
 
 // Secondary Colors
-$secondary-color: #ffffff;
+$primary-txt-color: #ffffff;
+$secondary-txt-color: #000;
 
 // Accent Colors
 $accent-color: #3e9cdc;
@@ -13,7 +14,7 @@ $accent-color: #3e9cdc;
 $main-font-size: 13px;
 $main-line-height: 16px;
 $main-font-family: "Lato", "Arial", sans-serif;
-$main-font-color: $secondary-color;
+$main-font-color: $primary-txt-color;
 $main-font-weight: 400;
 
 // Sizes
@@ -28,3 +29,4 @@ $md: 768px;
 $lg: 992px;
 $xl: 1200px;
 $xxl: 1400px;
+

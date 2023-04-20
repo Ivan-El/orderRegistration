@@ -1,0 +1,23 @@
+.button {
+  display: block;
+  padding: 15px 0;
+  text-decoration: none;
+  color: $primary-txt-color;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $accent-color;
+  border: 1px solid $primary-txt-color;
+  border-radius: 4px;
+}
+
+.button--secondary {
+  color: #2a2b30;
+  background-color: $primary-txt-color;
+  border: 1px solid #6f6d7b;
+}
+
+.button--outlined {
+  color: #272733;
+  background-color: $primary-txt-color;
+  border: 1px solid $accent-color;
+}

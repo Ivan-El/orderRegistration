@@ -1,0 +1,82 @@
+.features {
+  color: $secondary-txt-color;
+}
+
+.features__title {
+  margin: 0 0 40px;
+  width: 90%;
+  font-size: 26px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-weight: 800;
+
+  @media (min-width: $md) {
+    font-size: 32px;
+  }
+
+  @media (min-width: $lg) {
+    margin: 0 0 60px;
+    font-size: 42px;
+  }
+
+  @media (min-width: $xl) {
+    margin: 0 0 80px;
+    width: 780px;
+    font-size: 48px;
+    line-height: 58px;
+  }
+}
+
+.features__title-accent {
+  color: $accent-color;
+}
+
+.features__description {
+  margin: 0 0 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+
+  @media (min-width: $xl) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.features__list {
+  margin: 0 0 40px;
+  padding: 0;
+  list-style: none;
+  font-size: 16px;
+  line-height: 1.2;
+
+  & li:not(:last-child) {
+    margin-bottom: 5px;
+  }
+
+  @media (min-width: $lg) {
+    margin: 0 0 60px;
+  }
+
+  @media (min-width: $xl) {
+    margin: 0 0 80px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.features__item {
+  position: relative;
+  padding-left: 25px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    display: block;
+    width: 25px;
+    height: 100%;
+    background-image: url("../../img/icons/stack.svg#dash");
+    background-size: contain;
+  }
+}

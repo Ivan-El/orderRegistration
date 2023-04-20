@@ -1,0 +1,47 @@
+.presentation {
+  position: relative;
+  z-index: -1;
+  padding: 70px 0 50px;
+  background-image: url("../../img/presentation/presentation.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/presentation/presentation_2x.jpg");
+  }
+
+  @media (min-width: $sm) {
+    padding: 100px 0 70px;
+  }
+
+  @media (min-width: $md) {
+    padding: 120px 0 90px;
+  }
+
+  @media (min-width: $xl) {
+    padding: 203px 0;
+  }
+}
+
+.presentation__controls {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+  width: 100%;
+
+  @media (min-width: $sm) {
+    flex-direction: row;
+    column-gap: 30px;
+  }
+}
+
+.presentation__controls .button {
+  width: 223px;
+
+  @media (min-width: $md) {
+    width: 183px;
+  }
+}
