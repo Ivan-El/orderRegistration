@@ -1,0 +1,68 @@
+.order {
+  padding: 50px 0 70px;
+  background-image: url("../../img/patterns/world_pattern.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/patterns/world_pattern@2x.png");
+  }
+
+  @media (min-width: $sm) {
+    padding: 70px 0 90px;
+  }
+
+  @media (min-width: $md) {
+    padding: 90px 0 120px;
+  }
+
+  @media (min-width: $xl) {
+    padding: 120px 0 150px;
+  }
+}
+
+.order__title {
+  margin: 0 0 10px;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $md) {
+    font-size: 26px;
+  }
+
+  @media (min-width: $lg) {
+    margin: 0 0 20px;
+    font-size: 30px;
+  }
+
+  @media (min-width: $xl) {
+    margin: 0 0 30px;
+    font-size: 36px;
+    line-height: 43px;
+  }
+}
+
+.order__title-accent {
+  color: $accent-color;
+}
+
+.order__description {
+  margin: 0 0 40px;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+
+  @media (min-width: $lg) {
+    margin: 0 0 60px;
+  }
+
+  @media (min-width: $xl) {
+    margin: 0 0 80px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}

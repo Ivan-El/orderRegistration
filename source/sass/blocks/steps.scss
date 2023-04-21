@@ -1,0 +1,142 @@
+.steps {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 400px;
+  list-style: none;
+
+  @media (min-width: $sm) {
+    max-width: 500px;
+  }
+
+  @media (min-width: $xl) {
+    display: flex;
+    max-width: 100%;
+    column-gap: 14px;
+    overflow-x: scroll;
+  }
+
+  @media (min-width: $xxl) {
+    column-gap: 30px;
+  }
+}
+
+.steps__step {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-shrink: 0;
+  margin: 0 0 78px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $accent-color;
+  border-radius: 60px;
+
+  &:not(:last-child):before {
+    position: absolute;
+    content: "";
+    top: calc(100% + 10px);
+    left: calc(50% - 3px);
+    width: 6px;
+    height: 58px;
+    background-image: url("../../img/icons/stack.svg#chain_mobile");
+  }
+
+  @media (min-width: $sm) {
+    &:not(:last-child):before {
+      left: 47px;
+    }
+
+    &:nth-child(2n) {
+      flex-direction: row-reverse;
+      text-align: end;
+    }
+
+    &:nth-child(2n):before {
+      left: auto;
+      right: 47px;
+    }
+  }
+
+  @media (min-width: $xl) {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    width: 210px;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 0;
+
+    &:nth-child(2n) {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    &:not(:last-child):before {
+      top: 47px;
+      left: 162px;
+      width: 110px;
+      height: 6px;
+      background-image: url("../../img/icons/stack.svg#chain");
+    }
+  }
+
+  @media (min-width: $xxl) {
+    &:not(:last-child):before {
+      left: 170px;
+    }
+  }
+}
+
+.steps_pin {
+  width: 80px;
+  height: 80px;
+  background-color: $accent-color;
+  border: 5px solid $accent-color;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 55px;
+
+  @media (min-width: $xl) {
+    margin-bottom: 20px;
+    width: 100px;
+    height: 100px;
+    border-color: #286690;
+  }
+
+  &--search {
+    background-image: url("../../img/icons/stack.svg#search");
+  }
+
+  &--percent {
+    background-image: url("../../img/icons/stack.svg#percent");
+  }
+
+  &--contract {
+    background-image: url("../../img/icons/stack.svg#contract");
+  }
+
+  &--mail {
+    background-image: url("../../img/icons/stack.svg#mail");
+  }
+
+  &--bill {
+    background-image: url("../../img/icons/stack.svg#bill");
+  }
+}
+
+.steps_step-desc {
+  padding: 10px 20px;
+  width: 80%;
+  font-size: 16px;
+  line-height: 19px;
+
+  @media (min-width: $sm) {
+    flex-grow: 1;
+  }
+
+  @media (min-width: $xl) {
+    width: 100%;
+    padding: 0 10.5px;
+  }
+}
