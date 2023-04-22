@@ -75,7 +75,7 @@
           Оформление<span class="order__title-accent"> заказа</span>
         </h1>
         <p class="order__description">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
-        <ul class="steps">
+        <ul class="order__steps steps">
           <li class="steps__step">
             <div class="steps_pin steps_pin--search"></div>
             <div class="steps_step-desc">Lorem ipsum dolor sit amet</div>
@@ -97,6 +97,45 @@
             <div class="steps_step-desc">Excepteur sint occaecat cupidatat non proident</div>
           </li>
         </ul>
+        <form class="order-form" action="#" method="POST" oninput="rangeoutput.value = range.value">
+          <div class="custom-select" id="system-select">
+            <button class="custom-select__title" type="button">Выберите тип системы</button>
+            <input type="hidden" name="system" value="Sed ut perspiciatis">
+            <div class="custom-select__list-wrapper">
+              <div class="custom-select__list">
+                <button class="custom-select__item selected" data-value="Sed ut perspiciatis">Sed ut
+                  perspiciatis</button>
+                <button class="custom-select__item" data-value="Nemo enim ipsam">Nemo enim ipsam</button>
+                <button class="custom-select__item" data-value="Et harum quidem">Et harum quidem</button>
+                <button class="custom-select__item" data-value="Temporibus autem">Temporibus autem</button>
+                <button class="custom-select__item" data-value="Itaque earum rerum">Itaque earum rerum</button>
+                <button class="custom-select__item" data-value="Sed ut perspiciatis2">Sed ut perspiciatis2</button>
+                <button class="custom-select__item" data-value="Nemo enim ipsam2">Nemo enim ipsam2</button>
+                <button class="custom-select__item" data-value="Et harum quidem2">Et harum quidem2</button>
+                <button class="custom-select__item" data-value="Temporibus autem2">Temporibus autem2</button>
+                <button class="custom-select__item" data-value="Itaque earum rerum2">Itaque earum rerum2</button>
+              </div>
+            </div>
+          </div>
+          <input class="order-form__input" type="email" name="email" placeholder="Ваш e-mail"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required>
+          <input class="order-form__input" type="text" name="name" placeholder="Ваше имя"
+            pattern="^[a-zA-Z-А-Яа-яЁё\s]+$" required>
+          <div class="order-form__range custom-range">
+            <div class="custom-range__info">
+              <div class="custom-range__desc">Sed ut perspiciatis, unde omnis iste natus</div>
+              <div class="custom-range__percent"><output name="rangeoutput">75</output>%</div>
+            </div>
+            <input class="custom-range__input" type="range" name="range" min="1" max="100" step="1" value="75">
+          </div>
+          <div class="order-form__file custom-file" id="custom-file">
+            <input class="custom-file__input visually-hidden" id="file" type="file" name="file">
+            <button class="custom-file__button button button--outlined" type="button">
+              <span class="custom-file__button-text">Прикрепить файл</span>
+            </button>
+          </div>
+          <button class="order-form__button button" type="submit">Отправить</button>
+        </form>
       </div>
     </section>
   </main>

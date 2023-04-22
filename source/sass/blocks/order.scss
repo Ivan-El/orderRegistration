@@ -66,3 +66,15 @@
     line-height: 22px;
   }
 }
+
+.order__steps {
+  margin: 0 auto 40px;
+
+  @media (min-width: $lg) {
+    margin: 0 auto 60px;
+  }
+
+  @media (min-width: $xl) {
+    margin: 0 0 80px;
+  }
+}

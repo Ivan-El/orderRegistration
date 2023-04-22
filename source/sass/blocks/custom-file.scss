@@ -1,0 +1,28 @@
+.custom-file__button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  transition: $transition;
+}
+
+.custom-file__button.loaded {
+  color: $primary-txt-color;
+  border-color: $successes-color;
+  background-color: $successes-color;
+  background-image: url("../../img/icons/stack.svg#delete");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 85px) center;
+  background-size: 30px;
+}
+
+.custom-file__button-text {
+  display: block;
+}
+
+.loaded .custom-file__button-text {
+  width: 150px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

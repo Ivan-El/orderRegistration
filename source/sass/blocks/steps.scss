@@ -1,5 +1,4 @@
 .steps {
-  margin: 0 auto;
   padding: 0;
   max-width: 400px;
   list-style: none;
@@ -12,10 +11,11 @@
     display: flex;
     max-width: 100%;
     column-gap: 14px;
-    overflow-x: scroll;
+    overflow-x: auto;
   }
 
   @media (min-width: $xxl) {
+    width: 1168px;
     column-gap: 30px;
   }
 }
@@ -61,7 +61,7 @@
     flex-direction: column;
     align-items: center;
     margin: 0;
-    width: 210px;
+    width: 209px;
     text-align: center;
     background-color: transparent;
     border-radius: 0;

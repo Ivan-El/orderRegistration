@@ -9,6 +9,23 @@ html {
   box-sizing: inherit;
 }
 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #3d4050 $accent-color;
+}
+
+*::-webkit-scrollbar {
+  width: 7px;
+}
+*::-webkit-scrollbar-track {
+  background: #3d4050;
+  border-radius: 3px;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: $accent-color;
+  border-radius: 3px;
+}
+
 body {
   position: relative;
   margin: 0;
