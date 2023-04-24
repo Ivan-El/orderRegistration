@@ -3,7 +3,22 @@
   justify-content: center;
   width: 100%;
   height: 100%;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 600;
   transition: $transition;
+  background-image: url("../../img/icons/stack.svg#file");
+  background-position: 26% center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+
+  @media (min-width: $sm) {
+    background-position-x: 10%;
+  }
+
+  @media (min-width: $xl) {
+    background-position-x: 26%;
+  }
 }
 
 .custom-file__button.loaded {
@@ -11,17 +26,18 @@
   border-color: $successes-color;
   background-color: $successes-color;
   background-image: url("../../img/icons/stack.svg#delete");
-  background-repeat: no-repeat;
   background-position: calc(50% + 85px) center;
   background-size: 30px;
 }
 
 .custom-file__button-text {
   display: block;
+  margin-left: 20px;
+  width: 150px;
 }
 
 .loaded .custom-file__button-text {
-  width: 150px;
+  margin: 0;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;

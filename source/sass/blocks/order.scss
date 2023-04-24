@@ -21,6 +21,18 @@
   }
 }
 
+.order__description-container {
+  @media (min-width: $xl) {
+    width: 1168px;
+  }
+}
+
+.order__form-container {
+  @media (min-width: $xl) {
+    width: 1172px;
+  }
+}
+
 .order__title {
   margin: 0 0 10px;
   font-weight: 800;
@@ -40,9 +52,10 @@
   }
 
   @media (min-width: $xl) {
-    margin: 0 0 30px;
+    margin: 0 0 28px 4px;
     font-size: 36px;
     line-height: 43px;
+    word-spacing: 0.5rem;
   }
 }
 
@@ -61,7 +74,7 @@
   }
 
   @media (min-width: $xl) {
-    margin: 0 0 80px;
+    margin: 0 0 80px 8px;
     font-size: 18px;
     line-height: 22px;
   }
@@ -75,6 +88,6 @@
   }
 
   @media (min-width: $xl) {
-    margin: 0 0 80px;
+    margin: 0 0 87px;
   }
 }
