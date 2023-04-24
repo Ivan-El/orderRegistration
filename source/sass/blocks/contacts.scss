@@ -5,6 +5,7 @@
 
   @media (min-width: $lg) {
     display: flex;
+    flex-wrap: wrap;
     column-gap: 48px;
   }
 }
@@ -19,6 +20,7 @@
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 20px;
+  transition: $transition;
 
   &--email {
     background-image: url("../../img/icons/stack.svg#email");
@@ -26,5 +28,14 @@
 
   &--vk {
     background-image: url("../../img/icons/stack.svg#vk");
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

@@ -8,16 +8,39 @@
   background-color: $accent-color;
   border: 1px solid $primary-txt-color;
   border-radius: 4px;
+  transition: $transition;
+
+  &:hover {
+    background-color: #06436b;
+  }
+
+  &:active {
+    background-color: #042841;
+  }
 }
 
 .button--secondary {
   color: #2a2b30;
   background-color: $primary-txt-color;
   border: 1px solid #6f6d7b;
+
+  &:hover {
+    color: $primary-txt-color;
+    border-color: $primary-txt-color;
+  }
 }
 
 .button--outlined {
   color: #272733;
   background-color: $primary-txt-color;
   border: 1px solid $accent-color;
+
+  &:hover {
+    color: $primary-txt-color;
+    background-color: #c3c3c3;
+  }
+
+  &:active {
+    background-color: #707070;
+  }
 }

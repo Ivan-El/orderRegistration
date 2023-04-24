@@ -13,6 +13,7 @@
 
   @media (min-width: $lg) {
     display: flex;
+    flex-wrap: wrap;
     column-gap: 38px;
   }
 

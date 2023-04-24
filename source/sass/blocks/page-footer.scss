@@ -21,3 +21,21 @@
     flex-wrap: wrap;
   }
 }
+
+.page-footer__copyright {
+  @media (min-width: $xl) {
+    max-width: 308px;
+  }
+}
+
+.page-footer__payments {
+  @media (min-width: $xl) {
+    max-width: 467px;
+  }
+}
+
+.page-footer__contacts {
+  @media (min-width: $xl) {
+    max-width: 310px;
+  }
+}

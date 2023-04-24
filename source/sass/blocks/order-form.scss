@@ -59,6 +59,11 @@
 
   @media (min-width: $sm) {
     margin-top: 24px;
-    grid-column: 2/3;
+    grid-column: 1/-1;
+  }
+
+  @media (min-width: $sm) {
+    margin: 24px auto 0;
+    width: 370px;
   }
 }
