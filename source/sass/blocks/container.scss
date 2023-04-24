@@ -4,18 +4,18 @@
   width: 100%;
 
   @media (min-width: $sm) {
-    width: 560px;
     padding: 0 30px;
+    width: 560px;
   }
 
   @media (min-width: $md) {
-    width: 740px;
     padding: 0 40px;
+    width: 740px;
   }
 
   @media (min-width: $lg) {
-    width: 930px;
     padding: 0 50px;
+    width: 930px;
   }
 
   @media (min-width: $xl) {

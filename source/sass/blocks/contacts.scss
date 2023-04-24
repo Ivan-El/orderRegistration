@@ -1,0 +1,30 @@
+.contacts {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $lg) {
+    display: flex;
+    column-gap: 38px;
+  }
+}
+
+.contacts__item {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  height: 20px;
+  text-decoration: none;
+  color: inherit;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 20px;
+
+  &--email {
+    background-image: url("../../img/icons/stack.svg#email");
+  }
+
+  &--vk {
+    background-image: url("../../img/icons/stack.svg#vk");
+  }
+}

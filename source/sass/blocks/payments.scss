@@ -1,0 +1,62 @@
+.payments {
+  margin: 0;
+  padding: 10px 0;
+  color: #c3c3c3;
+  list-style: none;
+  border-top: 1px solid #c3c3c3;
+  border-bottom: 1px solid #c3c3c3;
+
+  @media (min-width: $sm) {
+    padding: 0;
+    border: none;
+  }
+
+  @media (min-width: $lg) {
+    display: flex;
+    column-gap: 38px;
+  }
+
+  @media (min-width: $xl) {
+    position: relative;
+    z-index: 0;
+    padding: 0 40px 0 42px;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      top: 10%;
+      width: 1px;
+      height: 90%;
+      background-color: #c3c3c3;
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
+  }
+}
+
+.payments__item {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  background-size: 20px;
+
+  &--qiwi {
+    background-image: url("../../img/icons/stack.svg#qiwi");
+  }
+  &--yandex {
+    background-image: url("../../img/icons/stack.svg#yandex");
+  }
+  &--webmoney {
+    background-image: url("../../img/icons/stack.svg#webmoney");
+  }
+}

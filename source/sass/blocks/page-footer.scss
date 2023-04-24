@@ -1,0 +1,23 @@
+.page-footer {
+  background-color: $footer-bg-color;
+}
+
+.page-footer__container {
+  display: flex;
+  flex-direction: column-reverse;
+  row-gap: 10px;
+  padding-top: 31px;
+  padding-bottom: 31px;
+
+  @media (min-width: $sm) {
+    flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    row-gap: 20px;
+  }
+
+  @media (min-width: $xl) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,14 @@
+.copyrigth {
+  @media (min-width: $sm) {
+    width: 100%;
+    text-align: end;
+  }
+
+  @media (min-width: $xl) {
+    width: fit-content;
+  }
+}
+
+.copyrigth__company {
+  text-transform: uppercase;
+}
