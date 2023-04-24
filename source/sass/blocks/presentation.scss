@@ -20,7 +20,7 @@
   }
 
   @media (min-width: $xl) {
-    padding: 203px 0;
+    padding: 204px 0 203px;
   }
 }
 
@@ -40,6 +40,7 @@
 
 .presentation__controls .button {
   width: 223px;
+  height: 43px;
 
   @media (min-width: $md) {
     width: 183px;

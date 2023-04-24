@@ -9,6 +9,17 @@
   display: block;
 }
 
+@media (min-width: $md) {
+  .site-list,
+  .menu-open-js .site-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 60px;
+    row-gap: 10px;
+    padding: 16px 0;
+  }
+}
+
 .site-list__link {
   display: block;
   padding: 5px;
@@ -17,7 +28,7 @@
   text-transform: uppercase;
   text-decoration: none;
   background-image: linear-gradient(currentColor, currentColor);
-  background-position: 0% 75%;
+  background-position: 0% 100%;
   background-repeat: no-repeat;
   background-size: 0% 1px;
   transition: $transition;
@@ -40,16 +51,5 @@
 
   @media (min-width: $xxl) {
     padding: 0;
-  }
-}
-
-@media (min-width: $md) {
-  .site-list,
-  .menu-open-js .site-list {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 60px;
-    row-gap: 10px;
-    padding: 16px 0;
   }
 }
