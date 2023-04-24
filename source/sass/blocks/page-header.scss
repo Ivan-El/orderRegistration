@@ -6,6 +6,15 @@
   width: 100%;
   min-height: 50px;
   background-color: $header-bg-color;
+
+  @media (min-width: $sm) {
+    padding: 0;
+    min-height: 80px;
+  }
+
+  @media (min-width: $md) {
+    min-height: 100px;
+  }
 }
 
 .page-header__container {
@@ -18,27 +27,12 @@
 .page-header__nav {
   width: 100%;
   text-align: center;
-}
 
-@media (min-width: $sm) {
-  .page-header {
-    padding: 0;
-    min-height: 80px;
-  }
-}
-
-@media (min-width: $md) {
-  .page-header {
-    height: 100px;
-  }
-
-  .page-header__nav {
+  @media (min-width: $md) {
     width: 50%;
   }
-}
 
-@media (min-width: $xxl) {
-  .page-header__nav {
-    width: 37%;
+  @media (min-width: $xxl) {
+    width: 37.4%;
   }
 }

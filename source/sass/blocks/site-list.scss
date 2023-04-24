@@ -37,12 +37,19 @@
     cursor: default;
     background-image: none;
   }
+
+  @media (min-width: $xxl) {
+    padding: 0;
+  }
 }
 
 @media (min-width: $md) {
   .site-list,
   .menu-open-js .site-list {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 60px;
+    row-gap: 10px;
+    padding: 16px 0;
   }
 }
