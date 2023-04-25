@@ -119,3 +119,60 @@ if (fileInputs.length) {
     });
   });
 }
+
+// Form
+
+const form = document.querySelector(".order-form");
+const formFileButtons = form.querySelectorAll(".custom-file__button");
+
+const showSuccessMessage = (formData) => {
+  const data = {};
+  for (const [key, value] of formData.entries()) {
+    data[key] = value;
+    if (typeof value === "object") {
+      data[key] = value.name;
+    }
+  }
+
+  const message = document.createElement("div");
+  message.className = "modal";
+  message.innerHTML = `
+  <div class="modal__header">Вы успешно отправили следующие данные:</div>
+  <div class="modal__body">
+    <pre><code>${JSON.stringify(data, null, 2)}</code></pre>
+  </div>
+  <div class="modal__footer">
+    <button class="modal__successes-button button">OK</button>
+  <div>
+  `;
+
+  document.body.append(message);
+  const buttons = document.querySelectorAll(".modal button");
+  if (buttons.length) {
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => {
+        message.remove();
+      });
+    });
+  }
+  setTimeout(() => message.remove(), 5000);
+};
+
+const onFormSubmit = (evt) => {
+  evt.preventDefault();
+  new FormData(evt.target);
+  evt.target.reset();
+  formFileButtons.forEach((button) => {
+    const buttonText = button.firstChild;
+
+    button.classList.remove("loaded");
+    buttonText.textContent = "Прикрепить файл";
+  });
+};
+
+const showFormDataValues = (evt) => {
+  showSuccessMessage(evt.formData);
+};
+
+form.addEventListener("submit", onFormSubmit);
+form.addEventListener("formdata", showFormDataValues);

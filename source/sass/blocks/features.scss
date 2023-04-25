@@ -1,6 +1,9 @@
 .features {
-  padding-left: 3px;
   color: $secondary-txt-color;
+
+  @media (min-width: $xl) {
+    padding-left: 3px;
+  }
 }
 
 .features__title {

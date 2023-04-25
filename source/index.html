@@ -119,10 +119,9 @@
               </div>
             </div>
           </div>
-          <input class="order-form__input" type="email" name="email" placeholder="Ваш e-mail"
-            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required>
+          <input class="order-form__input" type="email" name="email" placeholder="Ваш e-mail" required>
           <input class="order-form__input" type="text" name="name" placeholder="Ваше имя"
-            pattern="^[a-zA-Z-А-Яа-яЁё\s]+$" required>
+            pattern="[a-zA-Z-А-Яа-яЁё\s]" required>
           <div class="order-form__range custom-range">
             <div class="custom-range__info">
               <div class="custom-range__desc">Sed ut perspiciatis, unde omnis iste natus</div>
@@ -131,7 +130,7 @@
             <input class="custom-range__input" type="range" name="range" min="1" max="100" step="1" value="75">
           </div>
           <div class="order-form__file custom-file" id="custom-file">
-            <input class="custom-file__input visually-hidden" id="file" type="file" name="file">
+            <input class="custom-file__input visually-hidden" id="file" type="file" name="file" value="">
             <button class="custom-file__button button button--outlined" type="button">
               <span class="custom-file__button-text">Прикрепить файл</span>
             </button>
